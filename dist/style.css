@@ -1,31 +1,100 @@
-
-
-.container{
-/*font-family: 'Red Hat Mono', monospace;*/
-   height:100vh;
+:root {
+  --main-dark-color: #33373e;
+  --secondyry-dark-color: #3d3d3d;
+  --main-light-color: #f5f5f5;
+}
+.toggle-container:hover {
+  transform: rotate(-0deg);
+  opacity: 0.5;
+}
+.toggle-container {
+  transform: rotate(180deg);
+  transition: transform 0.5s, opacity 0.5s;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: inherit;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
+  cursor: pointer;
+  border: solid 1px;
+}
+.icon-moon-o:before {
+  content: "\e900";
+}
+.toggle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  height: 50%;
+  border-radius: 20rem;
+  border: 1px solid white;
+  background-color: transparent;
+}
+.container {
+  /*font-family: 'Red Hat Mono', monospace;*/
+  height: 100vh;
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
 }
-body{
-   margin:0;
-  padding:0
+body {
+  margin: 0;
+  padding: 0;
 }
 
- .dark{
-background-image: linear-gradient(to bottom, #1e2021, #212425, #24272a, #272b2e, #2b2f33, #353e45, #3d4e58, #455f6a, #52838a, #67a9a1, #8cceaf, #c2f1b7);
-   color: white;
-
+.dark {
+  background-color: var(--secondyry-dark-color);
+  border-color: var(--main-light-color);
+  color: var(--main-light-color);
+  background-image: linear-gradient(
+    to bottom,
+    #1e2021,
+    #212425,
+    #24272a,
+    #272b2e,
+    #2b2f33,
+    #353e45,
+    #3d4e58,
+    #455f6a,
+    #52838a,
+    #67a9a1,
+    #8cceaf,
+    #c2f1b7
+  );
 }
-.greeting{
-  font-family: 'Racing Sans One', cursive;
+.greeting {
+  font-family: "Racing Sans One", cursive;
   font-weight: 800;
   text-transform: uppercase;
   font-size: 6rem;
 }
-.light{
-  color: #33373e;
-  background-image: linear-gradient(to bottom, #f8f9fa, #f4f5f6, #eff0f2, #ebecee, #e7e8ea, #e4e8ec, #e0e8ed, #dce8ed, #d7ecef, #d3f1ed, #d5f4e6, #def6dc);
-
+.light {
+  background-color: var(--secondary-dark-color);
+  border-color: var(--main-dark-color);
+  color: var(--main-dark-color);
+  background-image: linear-gradient(
+    to bottom,
+    #f8f9fa,
+    #f4f5f6,
+    #eff0f2,
+    #ebecee,
+    #e7e8ea,
+    #e4e8ec,
+    #e0e8ed,
+    #dce8ed,
+    #d7ecef,
+    #d3f1ed,
+    #d5f4e6,
+    #def6dc
+  );
 }
