@@ -3,12 +3,27 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title></title>
-  <link href="style.css" rel="stylesheet" />
+  <title>Till Ganster Personal Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Red+Hat+Mono:ital,wght@1,300&display=swap" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet" />
+<script>
+      console.log("HALLO")
+      function toggleDarkMode(){
+        const container = document.getElementById("container");
+       container.classList.toggle("dark");
+        container.classList.toggle("light");
+      }
+    </script>
+
+
+
+
 </head>
 <body>
-  <section class="main">
+      <section id="container" onclick="toggleDarkMode()" class="container dark">
     <h1 class="greeting">Hi im Till :) </h1>
-    <section>
-</body>
+    </section>
+    </body>
 </html>
